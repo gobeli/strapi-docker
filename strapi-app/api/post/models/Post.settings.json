@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "post",
   "info": {
     "name": "post",
     "description": ""
@@ -9,19 +9,23 @@
     "timestamps": true
   },
   "attributes": {
-    "Title": {
+    "title": {
       "default": "",
       "type": "string"
     },
-    "Content": {
+    "content": {
       "default": "",
       "type": "text"
     },
-    "Image": {
+    "image": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "slug": {
+      "default": "",
+      "type": "string"
     }
   }
 }
